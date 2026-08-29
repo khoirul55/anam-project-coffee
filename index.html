@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Anam Project Coffee | Artisan Roastery Kerinci</title>
+  <meta name="description"
+    content="Artisan Roastery dari dataran tinggi Kerinci. Memberdayakan petani lokal, meroasting dengan hati, untuk menghadirkan rasa terbaik di setiap cangkir." />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,700;0,900;1,500;1,700&display=swap"
+    rel="stylesheet" />
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="assets/css/variables.css" />
+  <link rel="stylesheet" href="assets/css/main.css" />
+</head>
+
+<body>
+
+  <!-- NAVBAR -->
+  <nav id="navbar">
+    <div class="nav-logo">Anam<span>.</span>Project</div>
+    <div class="nav-links">
+      <a href="#about">Cerita Kami</a>
+      <a href="#products">Katalog</a>
+      <a href="#process">Proses</a>
+    </div>
+    <button class="nav-cta" onclick="orderWA()">Pesan Sekarang</button>
+  </nav>
+
+  <!-- HERO SECTION -->
+  <section id="hero">
+    <!-- Menggunakan gambar lanskap pegunungan berkabut (Unsplash placeholder) -->
+    <div class="parallax-bg"
+      style="background-image: url('assets/images/gunung.jpeg'); background-size: cover; background-position: center; filter: brightness(0.4);">
+    </div>
+    <div class="hero-bg-texture"></div>
+    <div class="hero-content">
+      <div class="eyebrow fade-up">Artisan Roastery from Kerinci Highlands</div>
+      <h1 class="heading-large hero-title">
+        <span class="reveal-text"><span>Born Above</span></span><br>
+        <span class="reveal-text delay-1"><span><i>the Clouds.</i></span></span>
+      </h1>
+      <p class="hero-desc fade-up delay-2">
+        Kami meroasting biji kopi terbaik dari dataran tinggi Kerinci, Jambi. Memberdayakan petani lokal, menjaga
+        keaslian rasa, untuk menghadirkan pengalaman ngopi yang sesungguhnya.
+      </p>
+      <div class="hero-buttons fade-up delay-3">
+        <button class="btn-solid-gold" onclick="document.getElementById('products').scrollIntoView()">Lihat Katalog
+          Produk</button>
+        <button class="btn-outline-light" onclick="orderWA()">Hubungi Kami</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT SECTION -->
+  <section id="about">
+    <div class="about-text">
+      <div class="eyebrow fade-up">Tentang Kami</div>
+      <h2 class="heading-medium section-title">
+        <span class="reveal-text"><span>Lebih dari sekadar</span></span><br>
+        <span class="reveal-text delay-1"><span>nama roastery.</span></span>
+      </h2>
+      <div class="about-desc fade-up delay-2">
+        <p>Anam Project Coffee didirikan dengan satu tujuan jelas: mengangkat nama kopi Kerinci ke
+          tempat yang seharusnya.</p>
+        <p>Kami percaya kopi yang baik tidak lahir dari mesin yang mahal, melainkan dari tanah yang sehat, tangan petani
+          yang teliti, dan proses <i>roasting</i> yang jujur. Di sinilah kami mengambil peran.</p>
+      </div>
+    </div>
+
+    <div class="features-grid">
+      <div class="feature-item fade-up">
+        <div class="feature-icon"><svg class="icon-svg" viewBox="0 0 24 24">
+            <path d="m8 3 4 8 5-5 5 15H2L8 3z"></path>
+          </svg></div>
+        <h3 class="feature-title">Kerinci Highlands</h3>
+        <p class="feature-desc">Kopi kami ditanam di lereng Gunung Kerinci pada ketinggian ideal (400 - 1700 MDPL),
+          menghasilkan karakter rasa yang khas dan pekat.</p>
+      </div>
+      <div class="feature-item fade-up delay-1">
+        <div class="feature-icon"><svg class="icon-svg" viewBox="0 0 24 24">
+            <path
+              d="M8.5 14.5A2.5 2.5 0 0 0 11 12c0-1.38-.5-2-1-3-1.072-2.143-.224-4.054 2-6 .5 2.5 2 4.9 4 6.5 2 1.6 3 3.5 3 5.5a7 7 0 1 1-14 0c0-1.153.433-2.294 1-3a2.5 2.5 0 0 0 2.5 2.5z">
+            </path>
+          </svg></div>
+        <h3 class="feature-title">Artisan Roastery</h3>
+        <p class="feature-desc">Diroasting dengan hati-hati dalam skala kecil untuk memastikan profil rasa yang presisi
+          di setiap batch produksi.</p>
+      </div>
+      <div class="feature-item fade-up delay-2">
+        <div class="feature-icon"><svg class="icon-svg" viewBox="0 0 24 24">
+            <path d="M18 11V6a2 2 0 0 0-2-2v0a2 2 0 0 0-2 2v0"></path>
+            <path d="M14 10V4a2 2 0 0 0-2-2v0a2 2 0 0 0-2 2v0"></path>
+            <path d="M10 10.5V6a2 2 0 0 0-2-2v0a2 2 0 0 0-2 2v0"></path>
+            <path d="M18 8a2 2 0 1 1 4 0v6a8 8 0 0 1-8 8h-2c-2.8 0-4.5-.86-5.99-2.34l-3.6-3.6a2 2 0 0 1 2.83-2.82L7 15">
+            </path>
+          </svg></div>
+        <h3 class="feature-title">Support Local</h3>
+        <p class="feature-desc">Kami bekerja sama langsung dan memberdayakan petani lokal Kerinci untuk memajukan
+          ekosistem kopi daerah.</p>
+      </div>
+      <div class="feature-item fade-up delay-3">
+        <div class="feature-icon"><svg class="icon-svg" viewBox="0 0 24 24">
+            <circle cx="12" cy="8" r="7"></circle>
+            <polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"></polyline>
+          </svg></div>
+        <h3 class="feature-title">Kualitas Terjamin</h3>
+        <p class="feature-desc">100% Kopi Kerinci asli yang disortir ketat. Bersertifikat Halal Indonesia (SPP-IRT
+          terdaftar).</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- PRODUCTS SECTION -->
+  <section id="products">
+    <div class="section-header">
+      <div class="eyebrow fade-up">Katalog Produk</div>
+      <h2 class="heading-medium">
+        <span class="reveal-text"><span>Kurasi Terbaik</span></span>
+        <span class="reveal-text delay-1"><span>Kami.</span></span>
+      </h2>
+    </div>
+
+    <!-- TAB TOGGLE -->
+    <div class="product-tabs fade-up">
+      <button class="tab-btn active" onclick="switchTab('roastery', this)">KABEUK</button>
+      <button class="tab-btn" onclick="switchTab('beverage', this)">NGUPAI</button>
+    </div>
+
+    <div class="product-list">
+
+      <!-- TAB CONTENT: ROASTERY (KABEUK) -->
+      <div class="tab-content active" id="roastery">
+        <div class="product-row fade-up">
+          <div class="product-image image-filled">
+            <img src="assets/images/robusta.jpeg" alt="Kabeuk Robusta"
+              onerror="this.style.display='none'; this.nextElementSibling.style.display='block';" />
+            <div class="abstract-bag" style="display:none;"></div>
+          </div>
+          <div class="product-details">
+            <div class="product-meta">
+              <span class="meta-tag">Robusta Single Origin</span>
+              <span class="meta-tag">Dark Roast</span>
+            </div>
+            <h3 class="product-name">KABEUK Robusta Kerinci</h3>
+            <div class="taste-notes">
+              <span class="note-badge">Earthy</span>
+              <span class="note-badge">Nutty</span>
+              <span class="note-badge">Dark Chocolate</span>
+            </div>
+            <p class="product-desc">Kopi berkualitas dari pegunungan Kerinci (400-1000 MDPL) yang ditanam oleh petani
+              lokal. Menghasilkan rasa yang kuat, penuh, dengan kadar kafein tinggi. Cocok bagi pencari tendangan kopi
+              sejati.</p>
+            <div class="product-action">
+              <button class="btn-solid-gold" onclick="orderWA('KABEUK Robusta')">Pesan via WA</button>
+              <span class="product-weight">Net. 200g</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="product-row fade-up delay-1" style="margin-top: 40px;">
+          <div class="product-image image-filled">
+            <img src="assets/images/arabica.jpeg" alt="Kabeuk Arabica"
+              onerror="this.style.display='none'; this.nextElementSibling.style.display='block';" />
+            <div class="abstract-bag" style="display:none;"></div>
+          </div>
+          <div class="product-details">
+            <div class="product-meta">
+              <span class="meta-tag">Arabica Single Origin</span>
+              <span class="meta-tag">Medium Roast</span>
+            </div>
+            <h3 class="product-name">KABEUK Arabica Kerinci</h3>
+            <div class="taste-notes">
+              <span class="note-badge">Citrusy</span>
+              <span class="note-badge">Floral</span>
+              <span class="note-badge">Sweet Caramel</span>
+            </div>
+            <p class="product-desc">Ditanam di dataran tinggi Kerinci (1000-1700 MDPL), Arabika ini menawarkan
+              kompleksitas rasa yang elegan dengan sentuhan keasaman segar dan aroma floral yang memanjakan indra
+              penciuman Anda.</p>
+            <div class="product-action">
+              <button class="btn-solid-gold" onclick="orderWA('KABEUK Arabica')">Pesan via WA</button>
+              <span class="product-weight">Net. 200g</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- TAB CONTENT: BEVERAGE (NGUPAI) -->
+      <div class="tab-content" id="beverage">
+        <div class="drinks-grid">
+
+          <!-- Drink 1 -->
+          <div class="drink-card fade-up">
+            <div class="drink-img">
+              <div class="abstract-bottle"></div>
+            </div>
+            <div class="drink-meta">Signature</div>
+            <h4 class="drink-name">Kopi Susu Gula Aren</h4>
+            <button class="drink-btn" onclick="orderWA('NGUPAI Gula Aren')">Pesan</button>
+          </div>
+
+          <!-- Drink 2 -->
+          <div class="drink-card fade-up delay-1">
+            <div class="drink-img">
+              <div class="abstract-bottle" style="border-radius:8px;"></div>
+            </div>
+            <div class="drink-meta">Classic</div>
+            <h4 class="drink-name">Americano</h4>
+            <button class="drink-btn" onclick="orderWA('NGUPAI Americano')">Pesan</button>
+          </div>
+
+          <!-- Drink 3 -->
+          <div class="drink-card fade-up delay-2">
+            <div class="drink-img">
+              <div class="abstract-bottle"></div>
+            </div>
+            <div class="drink-meta">Flavored</div>
+            <h4 class="drink-name">Cinnamon</h4>
+            <button class="drink-btn" onclick="orderWA('NGUPAI Cinnamon')">Pesan</button>
+          </div>
+
+          <!-- Drink 4 -->
+          <div class="drink-card fade-up">
+            <div class="drink-img">
+              <div class="abstract-bottle"></div>
+            </div>
+            <div class="drink-meta">Classic Milk</div>
+            <h4 class="drink-name">Latte</h4>
+            <button class="drink-btn" onclick="orderWA('NGUPAI Latte')">Pesan</button>
+          </div>
+
+          <!-- Drink 5 -->
+          <div class="drink-card fade-up delay-1">
+            <div class="drink-img">
+              <div class="abstract-bottle" style="border-color: #8b5a2b;"></div>
+            </div>
+            <div class="drink-meta">Premium</div>
+            <h4 class="drink-name">Cadbury</h4>
+            <button class="drink-btn" onclick="orderWA('NGUPAI Cadbury')">Pesan</button>
+          </div>
+
+          <!-- Drink 6 -->
+          <div class="drink-card fade-up delay-2">
+            <div class="drink-img">
+              <div class="abstract-bottle"></div>
+            </div>
+            <div class="drink-meta">Flavored</div>
+            <h4 class="drink-name">Vanilla</h4>
+            <button class="drink-btn" onclick="orderWA('NGUPAI Vanilla')">Pesan</button>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- PROCESS SECTION -->
+  <section id="process">
+    <div class="eyebrow fade-up">Standard Roastery</div>
+    <h2 class="heading-medium section-title">
+      <span class="reveal-text"><span>Jalan panjang</span></span><br>
+      <span class="reveal-text delay-1"><span>menuju cangkir Anda.</span></span>
+    </h2>
+
+    <div class="process-steps">
+      <div class="step-item fade-up">
+        <div class="step-num">01</div>
+        <div class="step-icon">
+          <svg class="icon-svg" viewBox="0 0 24 24">
+            <polygon points="22 3 2 3 10 12.46 10 19 14 21 14 12.46 22 3"></polygon>
+          </svg>
+        </div>
+        <h3 class="step-title">Seleksi Biji</h3>
+        <p class="step-desc">Hanya *green bean* terbaik dari petani mitra yang masuk ke ruang roasting kami.</p>
+      </div>
+
+      <div class="step-item fade-up delay-1">
+        <div class="step-num">02</div>
+        <div class="step-icon"><svg class="icon-svg" viewBox="0 0 24 24">
+            <path d="M17 8h1a4 4 0 1 1 0 8h-1"></path>
+            <path d="M3 8h14v9a4 4 0 0 1-4 4H7a4 4 0 0 1-4-4Z"></path>
+            <line x1="6" y1="2" x2="6" y2="4"></line>
+            <line x1="10" y1="2" x2="10" y2="4"></line>
+            <line x1="14" y1="2" x2="14" y2="4"></line>
+          </svg></div>
+        <h3 class="step-title">Profiling Rasio</h3>
+        <p class="step-desc">Diuji ketat untuk menemukan titik panggang (roast profile) yang menonjolkan karakter asli
+          kopi.</p>
+      </div>
+
+      <div class="step-item fade-up delay-2">
+        <div class="step-num">03</div>
+        <div class="step-icon"><svg class="icon-svg" viewBox="0 0 24 24">
+            <path d="M12 2v20"></path>
+            <path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path>
+          </svg></div>
+        <h3 class="step-title">Artisan Roasting</h3>
+        <p class="step-desc">Diroasting dengan mesin profesional dalam skala kecil untuk presisi tinggi.</p>
+      </div>
+
+      <div class="step-item fade-up delay-3">
+        <div class="step-num">04</div>
+        <div class="step-icon"><svg class="icon-svg" viewBox="0 0 24 24">
+            <path
+              d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z">
+            </path>
+            <polyline points="3.27 6.96 12 12.01 20.73 6.96"></polyline>
+            <line x1="12" y1="22.08" x2="12" y2="12"></line>
+          </svg></div>
+        <h3 class="step-title">Resting & Packing</h3>
+        <p class="step-desc">Dikemas dengan baik agar kualitas, kesegaran, dan aroma kopi tetap utuh saat tiba.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT SECTION -->
+  <section id="contact">
+    <div class="eyebrow fade-up" style="justify-content:center; color:var(--text-dark)">Tertarik mencoba?</div>
+    <h2 class="heading-medium contact-title">
+      <span class="reveal-text"><span>Mari berdiskusi</span></span><br>
+      <span class="reveal-text delay-1"><span>soal Kopi.</span></span>
+    </h2>
+    <div class="fade-up delay-2">
+      <button class="btn-solid-gold" onclick="orderWA('')" style="background:var(--bg-green); color:var(--text-light)">
+        <svg class="icon-svg" style="width:16px;height:16px;margin-bottom:-3px;stroke:currentColor;margin-right:8px;"
+          viewBox="0 0 24 24">
+          <path
+            d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z">
+          </path>
+        </svg>
+        Hubungi Kami via WhatsApp
+      </button>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-brand">
+      <span class="nav-logo">Anam<span>.</span>Project</span>
+      <p class="footer-desc">Artisan Roastery from Kerinci Highlands, Indonesia. Born above the clouds, crafted with
+        passion.</p>
+    </div>
+    <div>
+      <div class="footer-heading">Kontak</div>
+      <div class="footer-links">
+        <a href="https://instagram.com/anam.project.coffee" target="_blank">Instagram: @anam.project.coffee</a>
+        <a href="https://anamprojectcoffee.com" target="_blank">Web: anamprojectcoffee.com</a>
+        <span>Sungai Penuh, Kerinci, Jambi</span>
+      </div>
+    </div>
+    <div>
+      <div class="footer-heading">Produk</div>
+      <div class="footer-links">
+        <a href="#products">KABEUK (Bubuk/Biji)</a>
+        <a href="#products">NGUPAI (Siap Minum)</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      &copy; 2026 Anam Project Coffee. All Rights Reserved.
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+</body>
+
+</html>

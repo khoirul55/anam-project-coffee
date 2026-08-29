@@ -4,7 +4,7 @@
 
 // WhatsApp Order Function
 function orderWA(product) {
-  let msg = "Halo Sandi! Saya lihat dari website Anam Project Coffee.";
+  let msg = "Halo Meng! Saya lihat dari website Anam Project Coffee.";
   if (product) {
     msg += " Saya tertarik untuk pesan produk " + product + ".";
   } else {
@@ -20,12 +20,12 @@ function switchTab(tabId, btn) {
   document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
   // Activate clicked button
   btn.classList.add('active');
-  
+
   // Hide all contents
   document.querySelectorAll('.tab-content').forEach(c => {
     c.classList.remove('active');
   });
-  
+
   // Show target content
   document.getElementById(tabId).classList.add('active');
 }
@@ -33,7 +33,7 @@ function switchTab(tabId, btn) {
 // Navbar Scroll Effect & Parallax
 window.addEventListener('scroll', () => {
   const scrolled = window.scrollY;
-  
+
   const nav = document.getElementById('navbar');
   if (nav) {
     nav.classList.toggle('scrolled', scrolled > 50);

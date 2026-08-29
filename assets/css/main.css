@@ -53,8 +53,37 @@
   font-weight: 700;
   letter-spacing: 3px;
   text-transform: uppercase;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  text-decoration: none;
+  color: inherit;
 }
 .nav-logo span { color: var(--accent-gold); }
+.nav-logo-img {
+  height: 40px;
+  width: 40px;
+  object-fit: contain;
+  border-radius: 6px;
+  filter: invert(1);
+  transition: filter 0.4s ease;
+}
+#navbar.scrolled .nav-logo-img {
+  filter: invert(0);
+}
+
+/* Footer Logo */
+.footer-logo-link {
+  display: inline-block;
+  margin-bottom: 16px;
+}
+.footer-logo-img {
+  height: 60px;
+  width: 60px;
+  object-fit: contain;
+  border-radius: 8px;
+  filter: invert(1);
+}
 .nav-links { display: flex; align-items: center; gap: 40px; }
 .nav-links a {
   font-size: 12px;

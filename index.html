@@ -28,13 +28,18 @@
   <!-- NAVBAR -->
   <nav id="navbar">
     <a href="#" class="nav-logo"><img src="assets/images/logo.png" alt="Anam Project" class="nav-logo-img" style="height:40px;width:40px;object-fit:contain;" /><span class="nav-logo-text">Anam<span>.</span>Project</span></a>
-    <div class="nav-links">
-      <a href="#about">Cerita Kami</a>
-      <a href="#products">Katalog</a>
-      <a href="#process">Proses</a>
+    <div class="nav-links" id="navLinks">
+      <a href="#about" onclick="closeMenu()">Cerita Kami</a>
+      <a href="#products" onclick="closeMenu()">Katalog</a>
+      <a href="#process" onclick="closeMenu()">Proses</a>
+      <button class="nav-cta-mobile" onclick="closeMenu(); orderWA()">Pesan Sekarang</button>
     </div>
     <button class="nav-cta" onclick="orderWA()">Pesan Sekarang</button>
+    <button class="hamburger" id="hamburger" onclick="toggleMenu()" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
   </nav>
+  <div class="nav-overlay" id="navOverlay" onclick="closeMenu()"></div>
 
   <!-- HERO SECTION -->
   <section id="hero">

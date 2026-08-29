@@ -4,7 +4,7 @@
 
 // WhatsApp Order Function
 function orderWA(product) {
-  let msg = "Halo Meng! Saya lihat dari website Anam Project Coffee.";
+  let msg = "Halo Sandi! Saya lihat dari website Anam Project Coffee.";
   if (product) {
     msg += " Saya tertarik untuk pesan produk " + product + ".";
   } else {
@@ -16,24 +16,39 @@ function orderWA(product) {
 
 // Tab Switching Logic
 function switchTab(tabId, btn) {
-  // Reset buttons
   document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
-  // Activate clicked button
   btn.classList.add('active');
-
-  // Hide all contents
-  document.querySelectorAll('.tab-content').forEach(c => {
-    c.classList.remove('active');
-  });
-
-  // Show target content
+  document.querySelectorAll('.tab-content').forEach(c => c.classList.remove('active'));
   document.getElementById(tabId).classList.add('active');
+}
+
+// Hamburger Menu
+function toggleMenu() {
+  const hamburger = document.getElementById('hamburger');
+  const navLinks = document.getElementById('navLinks');
+  const overlay = document.getElementById('navOverlay');
+  
+  hamburger.classList.toggle('active');
+  navLinks.classList.toggle('open');
+  overlay.classList.toggle('visible');
+  document.body.style.overflow = navLinks.classList.contains('open') ? 'hidden' : '';
+}
+
+function closeMenu() {
+  const hamburger = document.getElementById('hamburger');
+  const navLinks = document.getElementById('navLinks');
+  const overlay = document.getElementById('navOverlay');
+  
+  hamburger.classList.remove('active');
+  navLinks.classList.remove('open');
+  overlay.classList.remove('visible');
+  document.body.style.overflow = '';
 }
 
 // Navbar Scroll Effect & Parallax
 window.addEventListener('scroll', () => {
   const scrolled = window.scrollY;
-
+  
   const nav = document.getElementById('navbar');
   if (nav) {
     nav.classList.toggle('scrolled', scrolled > 50);
